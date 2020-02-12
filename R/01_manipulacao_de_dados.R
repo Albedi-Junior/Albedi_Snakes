@@ -75,10 +75,14 @@ coord$Sites <- as.factor(coord$Sites)
 envir.coord <- merge(x = envir,
                      y = coord,
                      by = "Sites")
+
+# checar a junção com as funções
 dim(envir)
 dim(coord)
 dim(envir.coord)
 head(envir.coord)
+
+#Transformando uma matrix espécie vs. área em uma tabela de dados
 
 # vetor contendo todos os Sites
 Sites <- envir$Sites
@@ -99,12 +103,12 @@ colnames(comm.df) #nomes atuais
 colnames(comm.df) <-  c("TaxCode", "Abundance") # modificando os nomes das colunas
 colnames(comm.df) # checando os novos nomes
 
-seq.site <- rep(Sites, time = n.sp) # primeiro criamos a sequência
+seq.site <- rep(Sites, time = n.sp) # criandos sequências
 length(seq.site) # checando a dimensão
 comm.df$Sites <- seq.site
 head(comm.df)
 
-
+#Juntando todas as variáveis à comm.df
 comm.sp <- merge(comm.df, splist, by = "TaxCode")
 
 head(comm.sp)
