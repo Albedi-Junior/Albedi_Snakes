@@ -6,7 +6,7 @@
 # primeira versão em 2020-02-12
 #--------------------------------------------------#
 
-library("tidyr")
+#library("tidyr")
 
 files.path <- list.files(path = "data/cestes",
                          pattern = ".csv",
