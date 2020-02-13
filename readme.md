@@ -3,3 +3,6 @@ Adicionando request
 #library("vegan")
 
 #remoto funciando
+
+?par #help de edição de graficos 
+
