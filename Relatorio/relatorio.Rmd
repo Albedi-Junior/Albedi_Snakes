@@ -1,9 +1,19 @@
 ---
-title: "Relatorio"
+title: "Relatório Bibliografia"
 author: "Albedi Junior"
-date: "13/02/2020"
-output: html_document
+date: "14/02/2020"
+output:
+  word_document:
+    reference_docx: ../docs/markdown/template_capitulos.docx
+  html_document:
+    df_print: paged
+bibliography: ../citation/AED.bib
+csl: ../citation/nature.csl
+abstract: teste
 ---
+
+A analálise exploratória de dados é essencial [@tukey_exploratory_1977]
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -33,5 +43,5 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 knitr::include_graphics("../figs/figura01.png")
 ```
 
-![]("../figs/figura01.png")
+![](../figs/figura01.png)
 

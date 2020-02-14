@@ -263,6 +263,7 @@ pairs(vars)
 
 ## correlação entre variáveis e a curva de densidade probabilística de cada uma das variáveis##
 # EXEPCIONALMENTE vamos carregar o pacote agora, já que esse é um exercício bonus.
-#library("GGally")
-#ggpairs(vars)
+install.packages("GGally")
+library("GGally")
+ggpairs(vars)
 
